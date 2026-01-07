@@ -1,0 +1,33 @@
+.utama {
+  margin: 100px auto;
+  width: 90%;
+  display: flex;
+  border: 2px solid red;
+  overflow-x: auto;
+  gap: 1em;
+}
+.utama::webkit-scrollbar {
+  display: none;
+}
+.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  animation: spin 10s infinite linear;
+  padding-right: 1em;
+}
+.card {
+  flex: 0 0 5em;
+  height: 5em;
+  padding: 1em;
+  font-size: 3em;
+  background: green;
+  align-content: center;
+  text-align: center;
+  border-radius: .2em;
+}
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
+}
